@@ -9,3 +9,4 @@ pub mod matrix_transpose;
 pub mod sieve;
 pub mod checked_power;
 pub mod prefix_sums;
+pub mod sliding_window;
