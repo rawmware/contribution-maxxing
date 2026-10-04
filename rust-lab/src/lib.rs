@@ -23,3 +23,4 @@ pub mod custom_iterator;
 pub mod trait_dispatch;
 pub mod typed_parser;
 pub mod scoped_threads;
+pub mod channel_workers;
