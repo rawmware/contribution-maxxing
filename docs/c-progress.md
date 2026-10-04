@@ -459,3 +459,8 @@ This checkpoint documents the C lab contract for **checksum determinism**. The e
 This checkpoint documents the C lab contract for **RLE malformed input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 093. base64 padding
+
+This checkpoint documents the C lab contract for **base64 padding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
