@@ -189,3 +189,8 @@ This checkpoint documents the C lab contract for **merge touching ranges**. The 
 This checkpoint documents the C lab contract for **insertion sort stability**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 039. bubble sort early exit
+
+This checkpoint documents the C lab contract for **bubble sort early exit**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
