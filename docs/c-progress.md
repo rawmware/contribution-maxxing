@@ -344,3 +344,8 @@ This checkpoint documents the C lab contract for **file open failure**. The exam
 This checkpoint documents the C lab contract for **short read handling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 070. write retry policy
+
+This checkpoint documents the C lab contract for **write retry policy**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
