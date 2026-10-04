@@ -394,3 +394,8 @@ This checkpoint documents the C lab contract for **shuffle uniformity**. The exa
 This checkpoint documents the C lab contract for **reservoir sampling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 080. median odd count
+
+This checkpoint documents the C lab contract for **median odd count**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
