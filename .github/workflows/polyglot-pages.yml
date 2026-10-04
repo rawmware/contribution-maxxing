@@ -31,7 +31,7 @@ jobs:
       - name: Test browser CSharp source
         run: dotnet run --project web/tests/AlgorithmTests.csproj -- specs/vectors.json
       - name: Generate language pages
-        run: python web/build_site.py
+        run: dotnet run --project web/catalog/CatalogBuilder.csproj -- .
       - name: Test and compile Rust to WebAssembly
         run: |
           cargo test --manifest-path rust-lab/Cargo.toml
