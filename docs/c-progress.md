@@ -244,3 +244,8 @@ This checkpoint documents the C lab contract for **queue wraparound**. The examp
 This checkpoint documents the C lab contract for **ring buffer full state**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 050. linked list deletion
+
+This checkpoint documents the C lab contract for **linked list deletion**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
