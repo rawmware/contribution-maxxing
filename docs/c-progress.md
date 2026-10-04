@@ -254,3 +254,8 @@ This checkpoint documents the C lab contract for **linked list deletion**. The e
 This checkpoint documents the C lab contract for **tree leaf case**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 052. graph isolated vertex
+
+This checkpoint documents the C lab contract for **graph isolated vertex**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
