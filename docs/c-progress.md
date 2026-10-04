@@ -169,3 +169,8 @@ This checkpoint documents the C lab contract for **bit counting all ones**. The 
 This checkpoint documents the C lab contract for **clamp lower bound**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 035. clamp upper bound
+
+This checkpoint documents the C lab contract for **clamp upper bound**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
