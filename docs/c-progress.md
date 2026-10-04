@@ -94,3 +94,8 @@ This checkpoint documents the C lab contract for **fibonacci base cases**. The e
 This checkpoint documents the C lab contract for **factorial zero**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 020. binary search miss
+
+This checkpoint documents the C lab contract for **binary search miss**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
