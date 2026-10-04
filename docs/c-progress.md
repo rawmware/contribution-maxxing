@@ -174,3 +174,8 @@ This checkpoint documents the C lab contract for **clamp lower bound**. The exam
 This checkpoint documents the C lab contract for **clamp upper bound**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 036. merge disjoint ranges
+
+This checkpoint documents the C lab contract for **merge disjoint ranges**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
