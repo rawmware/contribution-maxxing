@@ -294,3 +294,8 @@ This checkpoint documents the C lab contract for **heapify invariant**. The exam
 This checkpoint documents the C lab contract for **priority queue ordering**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 060. hash collision handling
+
+This checkpoint documents the C lab contract for **hash collision handling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
