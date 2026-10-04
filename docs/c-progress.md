@@ -464,3 +464,8 @@ This checkpoint documents the C lab contract for **RLE malformed input**. The ex
 This checkpoint documents the C lab contract for **base64 padding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 094. hex case normalization
+
+This checkpoint documents the C lab contract for **hex case normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
