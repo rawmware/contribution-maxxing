@@ -374,3 +374,8 @@ This checkpoint documents the C lab contract for **thread join ownership**. The 
 This checkpoint documents the C lab contract for **mutex scope**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 076. condition wakeup
+
+This checkpoint documents the C lab contract for **condition wakeup**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
