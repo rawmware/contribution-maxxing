@@ -359,3 +359,8 @@ This checkpoint documents the C lab contract for **signal-safe state**. The exam
 This checkpoint documents the C lab contract for **atomic counter increment**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 073. producer consumer shutdown
+
+This checkpoint documents the C lab contract for **producer consumer shutdown**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
