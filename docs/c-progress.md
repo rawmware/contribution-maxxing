@@ -159,3 +159,8 @@ This checkpoint documents the C lab contract for **collatz step cap**. The examp
 This checkpoint documents the C lab contract for **bit counting zero**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 033. bit counting all ones
+
+This checkpoint documents the C lab contract for **bit counting all ones**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
