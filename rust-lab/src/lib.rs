@@ -6,3 +6,4 @@ pub mod balanced_delimiters;
 pub mod run_length;
 pub mod word_frequency;
 pub mod matrix_transpose;
+pub mod sieve;
