@@ -249,3 +249,8 @@ This checkpoint documents the C lab contract for **ring buffer full state**. The
 This checkpoint documents the C lab contract for **linked list deletion**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 051. tree leaf case
+
+This checkpoint documents the C lab contract for **tree leaf case**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
