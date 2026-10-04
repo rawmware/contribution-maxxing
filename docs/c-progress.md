@@ -229,3 +229,8 @@ This checkpoint documents the C lab contract for **sliding window bounds**. The 
 This checkpoint documents the C lab contract for **two pointer movement**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 047. stack underflow
+
+This checkpoint documents the C lab contract for **stack underflow**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
