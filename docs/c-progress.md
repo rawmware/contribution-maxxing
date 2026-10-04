@@ -494,3 +494,8 @@ This checkpoint documents the C lab contract for **CRC initial value**. The exam
 This checkpoint documents the C lab contract for **benchmark warmup**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 100. assertion message clarity
+
+This checkpoint documents the C lab contract for **assertion message clarity**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
