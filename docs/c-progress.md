@@ -234,3 +234,8 @@ This checkpoint documents the C lab contract for **two pointer movement**. The e
 This checkpoint documents the C lab contract for **stack underflow**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 048. queue wraparound
+
+This checkpoint documents the C lab contract for **queue wraparound**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
