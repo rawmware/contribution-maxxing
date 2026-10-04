@@ -8,3 +8,4 @@ pub mod word_frequency;
 pub mod matrix_transpose;
 pub mod sieve;
 pub mod checked_power;
+pub mod prefix_sums;
