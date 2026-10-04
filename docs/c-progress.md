@@ -109,3 +109,8 @@ This checkpoint documents the C lab contract for **linear search miss**. The exa
 This checkpoint documents the C lab contract for **array maximum**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 023. array minimum
+
+This checkpoint documents the C lab contract for **array minimum**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
