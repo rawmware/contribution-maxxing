@@ -429,3 +429,8 @@ This checkpoint documents the C lab contract for **linear regression zero slope*
 This checkpoint documents the C lab contract for **date leap year**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 087. calendar month bounds
+
+This checkpoint documents the C lab contract for **calendar month bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
