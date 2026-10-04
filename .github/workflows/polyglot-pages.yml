@@ -32,6 +32,14 @@ jobs:
         run: dotnet run --project web/tests/AlgorithmTests.csproj -- specs/vectors.json
       - name: Generate language pages
         run: python web/build_site.py
+      - name: Test and compile Rust to WebAssembly
+        run: |
+          cargo test --manifest-path rust-lab/Cargo.toml
+          cargo test --manifest-path web/rust/Cargo.toml
+          rustup target add wasm32-unknown-unknown
+          cargo build --manifest-path web/rust/Cargo.toml --release --target wasm32-unknown-unknown
+          mkdir -p .site/runtime
+          cp web/rust/target/wasm32-unknown-unknown/release/polyglot_browser.wasm .site/runtime/rust.wasm
       - name: Compile C to WebAssembly
         run: |
           git clone --depth 1 --branch 3.1.74 https://github.com/emscripten-core/emsdk.git "$RUNNER_TEMP/emsdk"
@@ -43,8 +51,7 @@ jobs:
       - name: Compile CSharp browser application
         run: |
           dotnet publish web/csharp/PolyglotLive.csproj -c Release -o "$RUNNER_TEMP/csharp-publish"
-          mkdir -p .site/csharp-live
-          cp -a "$RUNNER_TEMP/csharp-publish/wwwroot/." .site/csharp-live/
+          cp -a "$RUNNER_TEMP/csharp-publish/wwwroot/." .site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

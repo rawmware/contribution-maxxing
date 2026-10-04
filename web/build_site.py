@@ -30,7 +30,6 @@ def shell(title, prefix='./'):
 
 def main():
     OUT.mkdir(exist_ok=True)
-    (OUT / 'languages').mkdir(exist_ok=True)
     grouped = defaultdict(list)
     manifest = json.loads((ROOT / 'manifest.json').read_text(encoding='utf-8'))
     report_path = ROOT / 'verification.local.json'
@@ -41,6 +40,14 @@ def main():
             raise ValueError('Invalid source: ' + row['source'])
         grouped[row['language']].append({**row, 'code': source.read_text(encoding='utf-8'),
                                        'sha256': hashlib.sha256(source.read_bytes()).hexdigest()})
+    # Include the substantive labs and the exact browser runtime implementations.
+    for name, pattern in [('Rust', 'rust-lab/src/*.rs'), ('C', 'examples/c/lab/*.c'),
+                          ('Rust', 'web/rust/src/*.rs'), ('C', 'web/c/*.c'),
+                          ('CSharp', 'web/csharp/*.cs')]:
+        for source in sorted(ROOT.glob(pattern)):
+            grouped[name].append({'task': source.stem, 'source': source.relative_to(ROOT).as_posix(),
+                                  'code': source.read_text(encoding='utf-8'),
+                                  'sha256': hashlib.sha256(source.read_bytes()).hexdigest()})
     languages = []
     ids = set()
     for name, examples in sorted(grouped.items()):
@@ -49,7 +56,6 @@ def main():
             raise ValueError('Language route collision: ' + key)
         ids.add(key)
         languages.append({'name': name, 'id': key, 'examples': examples})
-        (OUT / 'languages' / (key + '.html')).write_text(shell(name, '../'), encoding='utf-8')
     try:
         revision = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
     except (OSError, subprocess.CalledProcessError):
@@ -58,12 +64,11 @@ def main():
             'builtAt': datetime.now(timezone.utc).isoformat(), 'revision': revision,
             'verification': report}
     (OUT / 'catalog.json').write_text(json.dumps(data, ensure_ascii=False), encoding='utf-8')
-    (OUT / 'index.html').write_text(shell('Explore languages'), encoding='utf-8')
-    (OUT / 'c-live.html').write_text(shell('C / Live WebAssembly'), encoding='utf-8')
+    shutil.copyfile(WEB / 'csharp/wwwroot/index.html', OUT / 'index.html')
     (OUT / '.nojekyll').write_text('', encoding='utf-8')
     for name in ('app.js', 'style.css'):
         shutil.copyfile(WEB / name, OUT / name)
-    print(f'Built {len(languages)} distinct language pages and {len(manifest)} source examples in {OUT}')
+    print(f'Built one catalog with {len(languages)} languages in {OUT}')
 
 
 if __name__ == '__main__':

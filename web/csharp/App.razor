@@ -1,38 +1,188 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+@using System.Net.Http.Json
 @namespace PolyglotLive
+@inject HttpClient Http
+@inject IJSRuntime Js
 
-<a href="../languages/csharp.html">← C# source workspace</a>
-<p class="eyebrow">C# · .NET WEBASSEMBLY</p>
-<h1>C#<span> / live runtime</span></h1>
-<p>These algorithms execute as C# under the browser's .NET WebAssembly runtime. No server or JavaScript algorithm substitutes.</p>
-<label>Algorithm
-    <select @bind="task">
-        <option value="gcd">GCD</option>
-        <option value="factorial">Factorial</option>
-        <option value="prime">Prime (1 / 0)</option>
-        <option value="fibonacci">Fibonacci</option>
-    </select>
-</label>
-<label>Input A / n <input type="number" min="0" max="1000000" step="1" @bind="a" /></label>
-<label>Input B (GCD only) <input type="number" min="0" max="1000000" step="1" @bind="b" /></label>
-<button @onclick="Run">Run C#</button>
-<output aria-live="polite">@result</output>
-<p>Bounds: GCD / prime 0–1,000,000; factorial 0–12; Fibonacci 0–30.</p>
-<a href="https://github.com/rawmware/contribution-maxxing/blob/main/web/csharp/Algorithms.cs">Inspect C# runtime source ↗</a>
+<header><a class="brand" href="./">cm<span> / </span>contribution-maxxing</a><a href="https://github.com/rawmware/contribution-maxxing">Source on GitHub ↗</a></header>
+<main>
+    <section class="hero">
+        <p class="eyebrow">THE POLYGLOT LAB / 001</p>
+        <h1>Different languages.<br /><span>Same playground.</span></h1>
+        <p class="intro">Rust. C. C#. Real compiled code, running right here.<br />Explore the rest of the collection without leaving this page.</p>
+        <div class="chips"><span>RUST / WASM</span><span>C / WASM</span><span>C# / .NET WASM</span></div>
+    </section>
+    @if (catalog is null)
+    {
+        <p role="status">@loadStatus</p>
+    }
+    else
+    {
+        <section class="workspace" aria-label="Language playground">
+            <aside>
+                <p class="eyebrow">01 / CHOOSE A LANGUAGE</p>
+                <label for="search">Explore @catalog.Languages.Count languages</label>
+                <input id="search" type="search" placeholder="Search languages…" @bind="query" @bind:event="oninput" />
+                <nav class="language-list" aria-label="Programming languages">
+                    @foreach (var language in FilteredLanguages)
+                    {
+                        <button class="language @(selected == language ? "selected" : "")" aria-pressed="@(selected == language)" disabled="@busy" @onclick="() => Select(language)">
+                            <span>@language.DisplayName</span><small>@(language.IsLive ? "LIVE ↗" : "SOURCE")</small>
+                        </button>
+                    }
+                </nav>
+                @if (!FilteredLanguages.Any()) { <p>No languages match “@query”.</p> }
+            </aside>
+            <div class="workbench">
+                @if (selected is not null)
+                {
+                    <div class="bench-heading"><div><p class="eyebrow">02 / EXPERIMENT</p><h2>@selected.DisplayName<span> workspace</span></h2></div><span class="badge">@(selected.IsLive ? "● BROWSER RUNTIME" : "SOURCE COLLECTION")</span></div>
+                    @if (selected.IsLive)
+                    {
+                        <p>@RuntimeDescription</p>
+                        <div class="controls">
+                            <label>Algorithm<select disabled="@busy" value="@task" @onchange="ChangeTask"><option value="gcd">Greatest common divisor</option><option value="factorial">Factorial</option><option value="prime">Prime check</option><option value="fibonacci">Fibonacci sequence</option></select></label>
+                            <label>@(task == "gcd" ? "Input A" : "Input n")<input disabled="@busy" type="number" min="0" max="@Maximum" step="1" @bind="inputA" /></label>
+                            @if (task == "gcd") { <label>Input B<input disabled="@busy" type="number" min="0" max="1000000" step="1" @bind="inputB" /></label> }
+                        </div>
+                        <p class="hint">Whole numbers 0–@Maximum.ToString("N0"). @(task == "prime" ? "1 means prime; 0 means not prime." : "")</p>
+                        <div class="actions"><button disabled="@busy" @onclick="Run">@(busy ? "Running…" : $"Run {selected.DisplayName} →")</button><button class="secondary" disabled="@busy" @onclick="Compare">Compare all three</button><button class="secondary" disabled="@busy" @onclick="Verify">Run shared tests</button></div>
+                        <div class="terminal"><div class="terminal-bar"><span>● ● ●</span><span>execution output</span></div><output aria-live="polite">@result</output></div>
+                        @if (comparisons.Count > 0)
+                        {
+                            <table><caption>Same inputs, independent implementations</caption><thead><tr><th>Language</th><th>Result</th></tr></thead><tbody>@foreach (var row in comparisons) { <tr><td>@row.Key</td><td>@row.Value</td></tr> }</tbody></table>
+                        }
+                    }
+                    else
+                    {
+                        <p>This language is represented by repository source and shared test vectors. Its compiler is not loaded in the browser. Use Rust, C, or C# for live execution.</p>
+                    }
+                    <div class="source-heading"><p class="eyebrow">03 / READ THE IMPLEMENTATION</p><span>@selected.Examples.Count files</span></div>
+                    @foreach (var source in selected.Examples)
+                    {
+                        <details @key="source.Source"><summary>@source.Task <span>@source.Source</span></summary><pre><code>@source.Code</code></pre><a href="@SourceUrl(source.Source)">Open source on GitHub ↗</a>
+                            @if (catalog.Vectors.TryGetValue(source.Task, out var vectors))
+                            {
+                                <p>@vectors.Description</p><p class="hint">@vectors.Cases.Length shared test cases. Expected values are fixtures, not live output.</p>
+                            }
+                        </details>
+                    }
+                }
+            </div>
+        </section>
+        <section class="about"><div><p class="eyebrow">BUILT FROM SOURCE</p><h2>A repository you can explore.</h2></div><p>The interface itself runs in C#. Rust and C compile to WebAssembly. HTML only starts the application; language examples remain inspectable source files in the repository.</p></section>
+        <footer><span>@catalog.Languages.Count languages · @catalog.Languages.Sum(l => l.Examples.Count) source files</span><span>Build @(catalog.Revision?[..Math.Min(8, catalog.Revision.Length)] ?? "local") · @catalog.BuiltAt</span></footer>
+    }
+</main>
 
 @code {
-    private string task = "gcd";
-    private int a = 48;
-    private int b = 18;
-    private string result = "C# WebAssembly ready.";
-    private void Run()
+    private Catalog? catalog;
+    private Language? selected;
+    private string query = "", task = "gcd", inputA = "48", inputB = "18";
+    private string loadStatus = "Loading repository source…";
+    private string result = "Ready. Choose inputs and run the compiled implementation.";
+    private bool busy;
+    private readonly Dictionary<string, string> comparisons = new();
+    private int Maximum => task switch { "factorial" => 12, "fibonacci" => 30, _ => 1_000_000 };
+    private IEnumerable<Language> FilteredLanguages => catalog!.Languages
+        .Where(l => (l.DisplayName + " " + l.Name).Contains(query, StringComparison.OrdinalIgnoreCase))
+        .OrderBy(l => l.Name switch { "Rust" => 0, "C" => 1, "CSharp" => 2, _ => 3 }).ThenBy(l => l.DisplayName);
+    private string RuntimeDescription => selected?.Name switch {
+        "Rust" => "Compiled Rust WebAssembly. No JavaScript algorithm substitutes.",
+        "C" => "C compiled with Emscripten. Inputs cross a small browser bridge into WebAssembly.",
+        _ => "C# running on the same .NET WebAssembly runtime that powers this interface."
+    };
+
+    protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            int value = Algorithms.Solve(task, a, b);
-            result = $"{task} → {value} · executed in C#";
+        try {
+            catalog = await Http.GetFromJsonAsync<Catalog>("catalog.json") ?? throw new Exception("Empty catalog.");
+            selected = catalog.Languages.First(l => l.Name == "Rust");
         }
-        catch (ArgumentException error) { result = error.Message; }
+        catch (Exception error) { loadStatus = "Cannot load source catalog. Reload to retry. " + error.Message; }
     }
+
+    private void Select(Language language) {
+        selected = language;
+        comparisons.Clear();
+        result = "Ready. Choose inputs and run the compiled implementation.";
+    }
+
+    private void ChangeTask(ChangeEventArgs args) {
+        task = args.Value?.ToString() ?? "gcd";
+        inputA = task switch { "factorial" => "5", "prime" => "97", "fibonacci" => "10", _ => "48" };
+        comparisons.Clear();
+        result = "Ready.";
+    }
+
+    private (int A, int B) ReadInputs() {
+        if (!int.TryParse(inputA, out var a) || a < 0 || a > Maximum)
+            throw new ArgumentException($"Input must be a whole number from 0 to {Maximum:N0}.");
+        var b = 0;
+        if (task == "gcd" && (!int.TryParse(inputB, out b) || b < 0 || b > 1_000_000))
+            throw new ArgumentException("Input B must be a whole number from 0 to 1,000,000.");
+        return (a, b);
+    }
+
+    private async Task<int> Execute(string language, string algorithm, int a, int b) => language == "CSharp"
+        ? Algorithms.Solve(algorithm, a, b)
+        : await Js.InvokeAsync<int>("polyglot.run", language, algorithm, a, b);
+
+    private async Task Run() {
+        busy = true;
+        comparisons.Clear();
+        try {
+            var (a, b) = ReadInputs();
+            result = "Loading and executing compiled code…";
+            var value = await Execute(selected!.Name, task, a, b);
+            result = $"{selected.DisplayName} / {task} → {value}";
+        }
+        catch (Exception error) { result = "Could not run: " + error.Message; }
+        finally { busy = false; }
+    }
+
+    private async Task Compare() {
+        busy = true;
+        comparisons.Clear();
+        try {
+            var (a, b) = ReadInputs();
+            var values = new List<int>();
+            foreach (var language in new[] { "Rust", "C", "CSharp" }) {
+                try {
+                    var value = await Execute(language, task, a, b);
+                    values.Add(value);
+                    comparisons[language == "CSharp" ? "C#" : language] = value.ToString();
+                }
+                catch (Exception error) { comparisons[language] = "Unavailable: " + error.Message; }
+            }
+            result = values.Count == 3 && values.Distinct().Count() == 1
+                ? "MATCH / All three compiled implementations agree."
+                : "Comparison incomplete or outputs differ. See each runtime result.";
+        }
+        catch (Exception error) { result = error.Message; }
+        finally { busy = false; }
+    }
+
+    private async Task Verify() {
+        busy = true;
+        comparisons.Clear();
+        try {
+            var passed = 0;
+            foreach (var pair in catalog!.Vectors) {
+                for (var i = 0; i < pair.Value.Cases.Length; i++) {
+                    var input = pair.Value.Cases[i];
+                    var actual = await Execute(selected!.Name, pair.Key, input[0], input.Length > 1 ? input[1] : 0);
+                    if (actual != pair.Value.Expected[i]) throw new Exception($"{pair.Key} case {i + 1} failed.");
+                    passed++;
+                }
+            }
+            result = $"PASS / {passed} shared cases executed in {selected!.DisplayName}.";
+        }
+        catch (Exception error) { result = "Verification failed: " + error.Message; }
+        finally { busy = false; }
+    }
+
+    private static string SourceUrl(string path) => "https://github.com/rawmware/contribution-maxxing/blob/main/" + string.Join("/", path.Split('/').Select(Uri.EscapeDataString));
 }
