@@ -1,0 +1,11 @@
+(defun solve (n) (if (< n 2) 0 (loop for d from 2 while (<= (* d d) n) do (when (zerop (mod n d)) (return-from solve 0)) finally (return 1))))
+
+(format t "~D~%" (solve 0))
+(format t "~D~%" (solve 1))
+(format t "~D~%" (solve 2))
+(format t "~D~%" (solve 3))
+(format t "~D~%" (solve 4))
+(format t "~D~%" (solve 25))
+(format t "~D~%" (solve 97))
+(format t "~D~%" (solve 121))
+(format t "~D~%" (solve 997))
