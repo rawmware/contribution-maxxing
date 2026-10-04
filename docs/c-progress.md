@@ -299,3 +299,8 @@ This checkpoint documents the C lab contract for **priority queue ordering**. Th
 This checkpoint documents the C lab contract for **hash collision handling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 061. string length empty
+
+This checkpoint documents the C lab contract for **string length empty**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
