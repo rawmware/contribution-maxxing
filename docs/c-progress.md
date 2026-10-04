@@ -474,3 +474,8 @@ This checkpoint documents the C lab contract for **hex case normalization**. The
 This checkpoint documents the C lab contract for **JSON escaping**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 096. URL percent encoding
+
+This checkpoint documents the C lab contract for **URL percent encoding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
