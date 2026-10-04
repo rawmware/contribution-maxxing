@@ -24,3 +24,8 @@ This checkpoint documents the C lab contract for **negative-value rejection**. T
 This checkpoint documents the C lab contract for **duplicate values**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 006. sorted input fast path
+
+This checkpoint documents the C lab contract for **sorted input fast path**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
