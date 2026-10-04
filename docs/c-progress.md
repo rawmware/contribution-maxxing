@@ -434,3 +434,8 @@ This checkpoint documents the C lab contract for **date leap year**. The example
 This checkpoint documents the C lab contract for **calendar month bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 088. edit distance empty string
+
+This checkpoint documents the C lab contract for **edit distance empty string**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
