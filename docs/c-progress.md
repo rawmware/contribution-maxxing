@@ -414,3 +414,8 @@ This checkpoint documents the C lab contract for **variance one sample**. The ex
 This checkpoint documents the C lab contract for **histogram empty input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 084. moving average warmup
+
+This checkpoint documents the C lab contract for **moving average warmup**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
