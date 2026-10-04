@@ -259,3 +259,8 @@ This checkpoint documents the C lab contract for **tree leaf case**. The example
 This checkpoint documents the C lab contract for **graph isolated vertex**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 053. breadth-first visitation
+
+This checkpoint documents the C lab contract for **breadth-first visitation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
