@@ -14,3 +14,8 @@ This checkpoint documents the C lab contract for **empty input handling**. The e
 This checkpoint documents the C lab contract for **zero and identity cases**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 004. negative-value rejection
+
+This checkpoint documents the C lab contract for **negative-value rejection**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
