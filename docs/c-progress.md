@@ -279,3 +279,8 @@ This checkpoint documents the C lab contract for **cycle detection**. The exampl
 This checkpoint documents the C lab contract for **topological ordering**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 057. disjoint set compression
+
+This checkpoint documents the C lab contract for **disjoint set compression**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
