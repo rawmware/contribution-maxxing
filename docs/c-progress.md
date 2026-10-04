@@ -224,3 +224,8 @@ This checkpoint documents the C lab contract for **prefix sum invariant**. The e
 This checkpoint documents the C lab contract for **sliding window bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 046. two pointer movement
+
+This checkpoint documents the C lab contract for **two pointer movement**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
