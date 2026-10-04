@@ -339,3 +339,8 @@ This checkpoint documents the C lab contract for **resource cleanup**. The examp
 This checkpoint documents the C lab contract for **file open failure**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 069. short read handling
+
+This checkpoint documents the C lab contract for **short read handling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
