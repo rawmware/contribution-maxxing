@@ -454,3 +454,8 @@ This checkpoint documents the C lab contract for **run-length encoding**. The ex
 This checkpoint documents the C lab contract for **checksum determinism**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 092. RLE malformed input
+
+This checkpoint documents the C lab contract for **RLE malformed input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
