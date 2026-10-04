@@ -89,3 +89,8 @@ This checkpoint documents the C lab contract for **prime boundary 2**. The examp
 This checkpoint documents the C lab contract for **fibonacci base cases**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 019. factorial zero
+
+This checkpoint documents the C lab contract for **factorial zero**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
