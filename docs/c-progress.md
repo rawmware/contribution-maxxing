@@ -469,3 +469,8 @@ This checkpoint documents the C lab contract for **base64 padding**. The example
 This checkpoint documents the C lab contract for **hex case normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 095. JSON escaping
+
+This checkpoint documents the C lab contract for **JSON escaping**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
