@@ -1,0 +1,1670 @@
+[
+  {
+    "language": "Python",
+    "task": "gcd",
+    "source": "examples/python/gcd/gcd.py",
+    "project": null,
+    "requires": [
+      "python"
+    ],
+    "run": [
+      "python",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Python",
+    "task": "factorial",
+    "source": "examples/python/factorial/factorial.py",
+    "project": null,
+    "requires": [
+      "python"
+    ],
+    "run": [
+      "python",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Python",
+    "task": "prime",
+    "source": "examples/python/prime/prime.py",
+    "project": null,
+    "requires": [
+      "python"
+    ],
+    "run": [
+      "python",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Python",
+    "task": "fibonacci",
+    "source": "examples/python/fibonacci/fibonacci.py",
+    "project": null,
+    "requires": [
+      "python"
+    ],
+    "run": [
+      "python",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "JavaScript",
+    "task": "gcd",
+    "source": "examples/javascript/gcd/gcd.js",
+    "project": null,
+    "requires": [
+      "node"
+    ],
+    "run": [
+      "node",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "JavaScript",
+    "task": "factorial",
+    "source": "examples/javascript/factorial/factorial.js",
+    "project": null,
+    "requires": [
+      "node"
+    ],
+    "run": [
+      "node",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "JavaScript",
+    "task": "prime",
+    "source": "examples/javascript/prime/prime.js",
+    "project": null,
+    "requires": [
+      "node"
+    ],
+    "run": [
+      "node",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "JavaScript",
+    "task": "fibonacci",
+    "source": "examples/javascript/fibonacci/fibonacci.js",
+    "project": null,
+    "requires": [
+      "node"
+    ],
+    "run": [
+      "node",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "TypeScript",
+    "task": "gcd",
+    "source": "examples/typescript/gcd/gcd.ts",
+    "project": null,
+    "requires": [
+      "tsc",
+      "node"
+    ],
+    "run": [
+      "node",
+      "{build}/{task}.js"
+    ],
+    "compile": [
+      "tsc",
+      "{source}",
+      "--strict",
+      "--target",
+      "ES2020",
+      "--outDir",
+      "{build}"
+    ]
+  },
+  {
+    "language": "TypeScript",
+    "task": "factorial",
+    "source": "examples/typescript/factorial/factorial.ts",
+    "project": null,
+    "requires": [
+      "tsc",
+      "node"
+    ],
+    "run": [
+      "node",
+      "{build}/{task}.js"
+    ],
+    "compile": [
+      "tsc",
+      "{source}",
+      "--strict",
+      "--target",
+      "ES2020",
+      "--outDir",
+      "{build}"
+    ]
+  },
+  {
+    "language": "TypeScript",
+    "task": "prime",
+    "source": "examples/typescript/prime/prime.ts",
+    "project": null,
+    "requires": [
+      "tsc",
+      "node"
+    ],
+    "run": [
+      "node",
+      "{build}/{task}.js"
+    ],
+    "compile": [
+      "tsc",
+      "{source}",
+      "--strict",
+      "--target",
+      "ES2020",
+      "--outDir",
+      "{build}"
+    ]
+  },
+  {
+    "language": "TypeScript",
+    "task": "fibonacci",
+    "source": "examples/typescript/fibonacci/fibonacci.ts",
+    "project": null,
+    "requires": [
+      "tsc",
+      "node"
+    ],
+    "run": [
+      "node",
+      "{build}/{task}.js"
+    ],
+    "compile": [
+      "tsc",
+      "{source}",
+      "--strict",
+      "--target",
+      "ES2020",
+      "--outDir",
+      "{build}"
+    ]
+  },
+  {
+    "language": "Ruby",
+    "task": "gcd",
+    "source": "examples/ruby/gcd/gcd.rb",
+    "project": null,
+    "requires": [
+      "ruby"
+    ],
+    "run": [
+      "ruby",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Ruby",
+    "task": "factorial",
+    "source": "examples/ruby/factorial/factorial.rb",
+    "project": null,
+    "requires": [
+      "ruby"
+    ],
+    "run": [
+      "ruby",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Ruby",
+    "task": "prime",
+    "source": "examples/ruby/prime/prime.rb",
+    "project": null,
+    "requires": [
+      "ruby"
+    ],
+    "run": [
+      "ruby",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Ruby",
+    "task": "fibonacci",
+    "source": "examples/ruby/fibonacci/fibonacci.rb",
+    "project": null,
+    "requires": [
+      "ruby"
+    ],
+    "run": [
+      "ruby",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PHP",
+    "task": "gcd",
+    "source": "examples/php/gcd/gcd.php",
+    "project": null,
+    "requires": [
+      "php"
+    ],
+    "run": [
+      "php",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PHP",
+    "task": "factorial",
+    "source": "examples/php/factorial/factorial.php",
+    "project": null,
+    "requires": [
+      "php"
+    ],
+    "run": [
+      "php",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PHP",
+    "task": "prime",
+    "source": "examples/php/prime/prime.php",
+    "project": null,
+    "requires": [
+      "php"
+    ],
+    "run": [
+      "php",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PHP",
+    "task": "fibonacci",
+    "source": "examples/php/fibonacci/fibonacci.php",
+    "project": null,
+    "requires": [
+      "php"
+    ],
+    "run": [
+      "php",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Go",
+    "task": "gcd",
+    "source": "examples/go/gcd/gcd.go",
+    "project": null,
+    "requires": [
+      "go"
+    ],
+    "run": [
+      "go",
+      "run",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Go",
+    "task": "factorial",
+    "source": "examples/go/factorial/factorial.go",
+    "project": null,
+    "requires": [
+      "go"
+    ],
+    "run": [
+      "go",
+      "run",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Go",
+    "task": "prime",
+    "source": "examples/go/prime/prime.go",
+    "project": null,
+    "requires": [
+      "go"
+    ],
+    "run": [
+      "go",
+      "run",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Go",
+    "task": "fibonacci",
+    "source": "examples/go/fibonacci/fibonacci.go",
+    "project": null,
+    "requires": [
+      "go"
+    ],
+    "run": [
+      "go",
+      "run",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Rust",
+    "task": "gcd",
+    "source": "examples/rust/gcd/gcd.rs",
+    "project": null,
+    "requires": [
+      "rustc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "rustc",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "Rust",
+    "task": "factorial",
+    "source": "examples/rust/factorial/factorial.rs",
+    "project": null,
+    "requires": [
+      "rustc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "rustc",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "Rust",
+    "task": "prime",
+    "source": "examples/rust/prime/prime.rs",
+    "project": null,
+    "requires": [
+      "rustc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "rustc",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "Rust",
+    "task": "fibonacci",
+    "source": "examples/rust/fibonacci/fibonacci.rs",
+    "project": null,
+    "requires": [
+      "rustc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "rustc",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C",
+    "task": "gcd",
+    "source": "examples/c/gcd/gcd.c",
+    "project": null,
+    "requires": [
+      "gcc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C",
+    "task": "factorial",
+    "source": "examples/c/factorial/factorial.c",
+    "project": null,
+    "requires": [
+      "gcc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C",
+    "task": "prime",
+    "source": "examples/c/prime/prime.c",
+    "project": null,
+    "requires": [
+      "gcc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C",
+    "task": "fibonacci",
+    "source": "examples/c/fibonacci/fibonacci.c",
+    "project": null,
+    "requires": [
+      "gcc"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "gcc",
+      "-std=c11",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C++",
+    "task": "gcd",
+    "source": "examples/cpp/gcd/gcd.cpp",
+    "project": null,
+    "requires": [
+      "g++"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C++",
+    "task": "factorial",
+    "source": "examples/cpp/factorial/factorial.cpp",
+    "project": null,
+    "requires": [
+      "g++"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C++",
+    "task": "prime",
+    "source": "examples/cpp/prime/prime.cpp",
+    "project": null,
+    "requires": [
+      "g++"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "C++",
+    "task": "fibonacci",
+    "source": "examples/cpp/fibonacci/fibonacci.cpp",
+    "project": null,
+    "requires": [
+      "g++"
+    ],
+    "run": [
+      "{exe}"
+    ],
+    "compile": [
+      "g++",
+      "-std=c++17",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "{source}",
+      "-o",
+      "{exe}"
+    ]
+  },
+  {
+    "language": "Java",
+    "task": "gcd",
+    "source": "examples/java/gcd/Main.java",
+    "project": null,
+    "requires": [
+      "javac",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "javac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Java",
+    "task": "factorial",
+    "source": "examples/java/factorial/Main.java",
+    "project": null,
+    "requires": [
+      "javac",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "javac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Java",
+    "task": "prime",
+    "source": "examples/java/prime/Main.java",
+    "project": null,
+    "requires": [
+      "javac",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "javac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Java",
+    "task": "fibonacci",
+    "source": "examples/java/fibonacci/Main.java",
+    "project": null,
+    "requires": [
+      "javac",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "javac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "CSharp",
+    "task": "gcd",
+    "source": "examples/csharp/gcd/Program.cs",
+    "project": "examples/csharp/gcd/Example.csproj",
+    "requires": [
+      "dotnet"
+    ],
+    "run": [
+      "dotnet",
+      "{build}/Example.dll"
+    ],
+    "compile": [
+      "dotnet",
+      "build",
+      "{project}",
+      "--output",
+      "{build}",
+      "--nologo",
+      "--verbosity",
+      "quiet"
+    ]
+  },
+  {
+    "language": "CSharp",
+    "task": "factorial",
+    "source": "examples/csharp/factorial/Program.cs",
+    "project": "examples/csharp/factorial/Example.csproj",
+    "requires": [
+      "dotnet"
+    ],
+    "run": [
+      "dotnet",
+      "{build}/Example.dll"
+    ],
+    "compile": [
+      "dotnet",
+      "build",
+      "{project}",
+      "--output",
+      "{build}",
+      "--nologo",
+      "--verbosity",
+      "quiet"
+    ]
+  },
+  {
+    "language": "CSharp",
+    "task": "prime",
+    "source": "examples/csharp/prime/Program.cs",
+    "project": "examples/csharp/prime/Example.csproj",
+    "requires": [
+      "dotnet"
+    ],
+    "run": [
+      "dotnet",
+      "{build}/Example.dll"
+    ],
+    "compile": [
+      "dotnet",
+      "build",
+      "{project}",
+      "--output",
+      "{build}",
+      "--nologo",
+      "--verbosity",
+      "quiet"
+    ]
+  },
+  {
+    "language": "CSharp",
+    "task": "fibonacci",
+    "source": "examples/csharp/fibonacci/Program.cs",
+    "project": "examples/csharp/fibonacci/Example.csproj",
+    "requires": [
+      "dotnet"
+    ],
+    "run": [
+      "dotnet",
+      "{build}/Example.dll"
+    ],
+    "compile": [
+      "dotnet",
+      "build",
+      "{project}",
+      "--output",
+      "{build}",
+      "--nologo",
+      "--verbosity",
+      "quiet"
+    ]
+  },
+  {
+    "language": "Lua",
+    "task": "gcd",
+    "source": "examples/lua/gcd/gcd.lua",
+    "project": null,
+    "requires": [
+      "lua"
+    ],
+    "run": [
+      "lua",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Lua",
+    "task": "factorial",
+    "source": "examples/lua/factorial/factorial.lua",
+    "project": null,
+    "requires": [
+      "lua"
+    ],
+    "run": [
+      "lua",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Lua",
+    "task": "prime",
+    "source": "examples/lua/prime/prime.lua",
+    "project": null,
+    "requires": [
+      "lua"
+    ],
+    "run": [
+      "lua",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Lua",
+    "task": "fibonacci",
+    "source": "examples/lua/fibonacci/fibonacci.lua",
+    "project": null,
+    "requires": [
+      "lua"
+    ],
+    "run": [
+      "lua",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Perl",
+    "task": "gcd",
+    "source": "examples/perl/gcd/gcd.pl",
+    "project": null,
+    "requires": [
+      "perl"
+    ],
+    "run": [
+      "perl",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Perl",
+    "task": "factorial",
+    "source": "examples/perl/factorial/factorial.pl",
+    "project": null,
+    "requires": [
+      "perl"
+    ],
+    "run": [
+      "perl",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Perl",
+    "task": "prime",
+    "source": "examples/perl/prime/prime.pl",
+    "project": null,
+    "requires": [
+      "perl"
+    ],
+    "run": [
+      "perl",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Perl",
+    "task": "fibonacci",
+    "source": "examples/perl/fibonacci/fibonacci.pl",
+    "project": null,
+    "requires": [
+      "perl"
+    ],
+    "run": [
+      "perl",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "R",
+    "task": "gcd",
+    "source": "examples/r/gcd/gcd.R",
+    "project": null,
+    "requires": [
+      "Rscript"
+    ],
+    "run": [
+      "Rscript",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "R",
+    "task": "factorial",
+    "source": "examples/r/factorial/factorial.R",
+    "project": null,
+    "requires": [
+      "Rscript"
+    ],
+    "run": [
+      "Rscript",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "R",
+    "task": "prime",
+    "source": "examples/r/prime/prime.R",
+    "project": null,
+    "requires": [
+      "Rscript"
+    ],
+    "run": [
+      "Rscript",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "R",
+    "task": "fibonacci",
+    "source": "examples/r/fibonacci/fibonacci.R",
+    "project": null,
+    "requires": [
+      "Rscript"
+    ],
+    "run": [
+      "Rscript",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Julia",
+    "task": "gcd",
+    "source": "examples/julia/gcd/gcd.jl",
+    "project": null,
+    "requires": [
+      "julia"
+    ],
+    "run": [
+      "julia",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Julia",
+    "task": "factorial",
+    "source": "examples/julia/factorial/factorial.jl",
+    "project": null,
+    "requires": [
+      "julia"
+    ],
+    "run": [
+      "julia",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Julia",
+    "task": "prime",
+    "source": "examples/julia/prime/prime.jl",
+    "project": null,
+    "requires": [
+      "julia"
+    ],
+    "run": [
+      "julia",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Julia",
+    "task": "fibonacci",
+    "source": "examples/julia/fibonacci/fibonacci.jl",
+    "project": null,
+    "requires": [
+      "julia"
+    ],
+    "run": [
+      "julia",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Swift",
+    "task": "gcd",
+    "source": "examples/swift/gcd/gcd.swift",
+    "project": null,
+    "requires": [
+      "swift"
+    ],
+    "run": [
+      "swift",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Swift",
+    "task": "factorial",
+    "source": "examples/swift/factorial/factorial.swift",
+    "project": null,
+    "requires": [
+      "swift"
+    ],
+    "run": [
+      "swift",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Swift",
+    "task": "prime",
+    "source": "examples/swift/prime/prime.swift",
+    "project": null,
+    "requires": [
+      "swift"
+    ],
+    "run": [
+      "swift",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Swift",
+    "task": "fibonacci",
+    "source": "examples/swift/fibonacci/fibonacci.swift",
+    "project": null,
+    "requires": [
+      "swift"
+    ],
+    "run": [
+      "swift",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Kotlin",
+    "task": "gcd",
+    "source": "examples/kotlin/gcd/gcd.kt",
+    "project": null,
+    "requires": [
+      "kotlinc",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-jar",
+      "{build}/example.jar"
+    ],
+    "compile": [
+      "kotlinc",
+      "{source}",
+      "-include-runtime",
+      "-d",
+      "{build}/example.jar"
+    ]
+  },
+  {
+    "language": "Kotlin",
+    "task": "factorial",
+    "source": "examples/kotlin/factorial/factorial.kt",
+    "project": null,
+    "requires": [
+      "kotlinc",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-jar",
+      "{build}/example.jar"
+    ],
+    "compile": [
+      "kotlinc",
+      "{source}",
+      "-include-runtime",
+      "-d",
+      "{build}/example.jar"
+    ]
+  },
+  {
+    "language": "Kotlin",
+    "task": "prime",
+    "source": "examples/kotlin/prime/prime.kt",
+    "project": null,
+    "requires": [
+      "kotlinc",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-jar",
+      "{build}/example.jar"
+    ],
+    "compile": [
+      "kotlinc",
+      "{source}",
+      "-include-runtime",
+      "-d",
+      "{build}/example.jar"
+    ]
+  },
+  {
+    "language": "Kotlin",
+    "task": "fibonacci",
+    "source": "examples/kotlin/fibonacci/fibonacci.kt",
+    "project": null,
+    "requires": [
+      "kotlinc",
+      "java"
+    ],
+    "run": [
+      "java",
+      "-jar",
+      "{build}/example.jar"
+    ],
+    "compile": [
+      "kotlinc",
+      "{source}",
+      "-include-runtime",
+      "-d",
+      "{build}/example.jar"
+    ]
+  },
+  {
+    "language": "Scala",
+    "task": "gcd",
+    "source": "examples/scala/gcd/gcd.scala",
+    "project": null,
+    "requires": [
+      "scalac",
+      "scala"
+    ],
+    "run": [
+      "scala",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "scalac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Scala",
+    "task": "factorial",
+    "source": "examples/scala/factorial/factorial.scala",
+    "project": null,
+    "requires": [
+      "scalac",
+      "scala"
+    ],
+    "run": [
+      "scala",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "scalac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Scala",
+    "task": "prime",
+    "source": "examples/scala/prime/prime.scala",
+    "project": null,
+    "requires": [
+      "scalac",
+      "scala"
+    ],
+    "run": [
+      "scala",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "scalac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Scala",
+    "task": "fibonacci",
+    "source": "examples/scala/fibonacci/fibonacci.scala",
+    "project": null,
+    "requires": [
+      "scalac",
+      "scala"
+    ],
+    "run": [
+      "scala",
+      "-cp",
+      "{build}",
+      "Main"
+    ],
+    "compile": [
+      "scalac",
+      "-d",
+      "{build}",
+      "{source}"
+    ]
+  },
+  {
+    "language": "Clojure",
+    "task": "gcd",
+    "source": "examples/clojure/gcd/gcd.clj",
+    "project": null,
+    "requires": [
+      "clojure"
+    ],
+    "run": [
+      "clojure",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Clojure",
+    "task": "factorial",
+    "source": "examples/clojure/factorial/factorial.clj",
+    "project": null,
+    "requires": [
+      "clojure"
+    ],
+    "run": [
+      "clojure",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Clojure",
+    "task": "prime",
+    "source": "examples/clojure/prime/prime.clj",
+    "project": null,
+    "requires": [
+      "clojure"
+    ],
+    "run": [
+      "clojure",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Clojure",
+    "task": "fibonacci",
+    "source": "examples/clojure/fibonacci/fibonacci.clj",
+    "project": null,
+    "requires": [
+      "clojure"
+    ],
+    "run": [
+      "clojure",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Elixir",
+    "task": "gcd",
+    "source": "examples/elixir/gcd/gcd.exs",
+    "project": null,
+    "requires": [
+      "elixir"
+    ],
+    "run": [
+      "elixir",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Elixir",
+    "task": "factorial",
+    "source": "examples/elixir/factorial/factorial.exs",
+    "project": null,
+    "requires": [
+      "elixir"
+    ],
+    "run": [
+      "elixir",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Elixir",
+    "task": "prime",
+    "source": "examples/elixir/prime/prime.exs",
+    "project": null,
+    "requires": [
+      "elixir"
+    ],
+    "run": [
+      "elixir",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Elixir",
+    "task": "fibonacci",
+    "source": "examples/elixir/fibonacci/fibonacci.exs",
+    "project": null,
+    "requires": [
+      "elixir"
+    ],
+    "run": [
+      "elixir",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Haskell",
+    "task": "gcd",
+    "source": "examples/haskell/gcd/gcd.hs",
+    "project": null,
+    "requires": [
+      "runghc"
+    ],
+    "run": [
+      "runghc",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Haskell",
+    "task": "factorial",
+    "source": "examples/haskell/factorial/factorial.hs",
+    "project": null,
+    "requires": [
+      "runghc"
+    ],
+    "run": [
+      "runghc",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Haskell",
+    "task": "prime",
+    "source": "examples/haskell/prime/prime.hs",
+    "project": null,
+    "requires": [
+      "runghc"
+    ],
+    "run": [
+      "runghc",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Haskell",
+    "task": "fibonacci",
+    "source": "examples/haskell/fibonacci/fibonacci.hs",
+    "project": null,
+    "requires": [
+      "runghc"
+    ],
+    "run": [
+      "runghc",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "OCaml",
+    "task": "gcd",
+    "source": "examples/ocaml/gcd/gcd.ml",
+    "project": null,
+    "requires": [
+      "ocaml"
+    ],
+    "run": [
+      "ocaml",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "OCaml",
+    "task": "factorial",
+    "source": "examples/ocaml/factorial/factorial.ml",
+    "project": null,
+    "requires": [
+      "ocaml"
+    ],
+    "run": [
+      "ocaml",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "OCaml",
+    "task": "prime",
+    "source": "examples/ocaml/prime/prime.ml",
+    "project": null,
+    "requires": [
+      "ocaml"
+    ],
+    "run": [
+      "ocaml",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "OCaml",
+    "task": "fibonacci",
+    "source": "examples/ocaml/fibonacci/fibonacci.ml",
+    "project": null,
+    "requires": [
+      "ocaml"
+    ],
+    "run": [
+      "ocaml",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Racket",
+    "task": "gcd",
+    "source": "examples/racket/gcd/gcd.rkt",
+    "project": null,
+    "requires": [
+      "racket"
+    ],
+    "run": [
+      "racket",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Racket",
+    "task": "factorial",
+    "source": "examples/racket/factorial/factorial.rkt",
+    "project": null,
+    "requires": [
+      "racket"
+    ],
+    "run": [
+      "racket",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Racket",
+    "task": "prime",
+    "source": "examples/racket/prime/prime.rkt",
+    "project": null,
+    "requires": [
+      "racket"
+    ],
+    "run": [
+      "racket",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "Racket",
+    "task": "fibonacci",
+    "source": "examples/racket/fibonacci/fibonacci.rkt",
+    "project": null,
+    "requires": [
+      "racket"
+    ],
+    "run": [
+      "racket",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "CommonLisp",
+    "task": "gcd",
+    "source": "examples/common-lisp/gcd/gcd.lisp",
+    "project": null,
+    "requires": [
+      "sbcl"
+    ],
+    "run": [
+      "sbcl",
+      "--script",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "CommonLisp",
+    "task": "factorial",
+    "source": "examples/common-lisp/factorial/factorial.lisp",
+    "project": null,
+    "requires": [
+      "sbcl"
+    ],
+    "run": [
+      "sbcl",
+      "--script",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "CommonLisp",
+    "task": "prime",
+    "source": "examples/common-lisp/prime/prime.lisp",
+    "project": null,
+    "requires": [
+      "sbcl"
+    ],
+    "run": [
+      "sbcl",
+      "--script",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "CommonLisp",
+    "task": "fibonacci",
+    "source": "examples/common-lisp/fibonacci/fibonacci.lisp",
+    "project": null,
+    "requires": [
+      "sbcl"
+    ],
+    "run": [
+      "sbcl",
+      "--script",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PowerShell",
+    "task": "gcd",
+    "source": "examples/powershell/gcd/gcd.ps1",
+    "project": null,
+    "requires": [
+      "powershell"
+    ],
+    "run": [
+      "powershell",
+      "-NoProfile",
+      "-NonInteractive",
+      "-File",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PowerShell",
+    "task": "factorial",
+    "source": "examples/powershell/factorial/factorial.ps1",
+    "project": null,
+    "requires": [
+      "powershell"
+    ],
+    "run": [
+      "powershell",
+      "-NoProfile",
+      "-NonInteractive",
+      "-File",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PowerShell",
+    "task": "prime",
+    "source": "examples/powershell/prime/prime.ps1",
+    "project": null,
+    "requires": [
+      "powershell"
+    ],
+    "run": [
+      "powershell",
+      "-NoProfile",
+      "-NonInteractive",
+      "-File",
+      "{source}"
+    ],
+    "compile": null
+  },
+  {
+    "language": "PowerShell",
+    "task": "fibonacci",
+    "source": "examples/powershell/fibonacci/fibonacci.ps1",
+    "project": null,
+    "requires": [
+      "powershell"
+    ],
+    "run": [
+      "powershell",
+      "-NoProfile",
+      "-NonInteractive",
+      "-File",
+      "{source}"
+    ],
+    "compile": null
+  }
+]

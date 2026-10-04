@@ -1,0 +1,148 @@
+{
+  "gcd": {
+    "description": "Euclidean greatest common divisor of two nonnegative integers; gcd(0,0)=0.",
+    "cases": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        48,
+        18
+      ],
+      [
+        17,
+        13
+      ],
+      [
+        270,
+        192
+      ]
+    ],
+    "expected": [
+      0,
+      7,
+      7,
+      6,
+      1,
+      6
+    ]
+  },
+  "factorial": {
+    "description": "Iterative or recursive factorial for integers 0 through 12.",
+    "cases": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        5
+      ],
+      [
+        10
+      ],
+      [
+        12
+      ]
+    ],
+    "expected": [
+      1,
+      1,
+      2,
+      120,
+      3628800,
+      479001600
+    ]
+  },
+  "prime": {
+    "description": "Return 1 for a prime integer and 0 otherwise; domain 0 through 1000000.",
+    "cases": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        4
+      ],
+      [
+        25
+      ],
+      [
+        97
+      ],
+      [
+        121
+      ],
+      [
+        997
+      ]
+    ],
+    "expected": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  "fibonacci": {
+    "description": "Zero-indexed Fibonacci, F(0)=0, F(1)=1; domain 0 through 30.",
+    "cases": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2
+      ],
+      [
+        3
+      ],
+      [
+        10
+      ],
+      [
+        20
+      ],
+      [
+        30
+      ]
+    ],
+    "expected": [
+      0,
+      1,
+      1,
+      2,
+      55,
+      6765,
+      832040
+    ]
+  }
+}
