@@ -239,3 +239,8 @@ This checkpoint documents the C lab contract for **stack underflow**. The exampl
 This checkpoint documents the C lab contract for **queue wraparound**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 049. ring buffer full state
+
+This checkpoint documents the C lab contract for **ring buffer full state**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
