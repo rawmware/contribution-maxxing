@@ -289,3 +289,8 @@ This checkpoint documents the C lab contract for **disjoint set compression**. T
 This checkpoint documents the C lab contract for **heapify invariant**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 059. priority queue ordering
+
+This checkpoint documents the C lab contract for **priority queue ordering**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
