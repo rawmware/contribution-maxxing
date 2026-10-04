@@ -384,3 +384,8 @@ This checkpoint documents the C lab contract for **condition wakeup**. The examp
 This checkpoint documents the C lab contract for **random seed reproducibility**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 078. shuffle uniformity
+
+This checkpoint documents the C lab contract for **shuffle uniformity**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
