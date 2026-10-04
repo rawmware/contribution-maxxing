@@ -364,3 +364,8 @@ This checkpoint documents the C lab contract for **atomic counter increment**. T
 This checkpoint documents the C lab contract for **producer consumer shutdown**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 074. thread join ownership
+
+This checkpoint documents the C lab contract for **thread join ownership**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
