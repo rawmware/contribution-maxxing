@@ -389,3 +389,8 @@ This checkpoint documents the C lab contract for **random seed reproducibility**
 This checkpoint documents the C lab contract for **shuffle uniformity**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 079. reservoir sampling
+
+This checkpoint documents the C lab contract for **reservoir sampling**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
