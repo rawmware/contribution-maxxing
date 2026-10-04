@@ -219,3 +219,8 @@ This checkpoint documents the C lab contract for **extended gcd coefficients**. 
 This checkpoint documents the C lab contract for **prefix sum invariant**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 045. sliding window bounds
+
+This checkpoint documents the C lab contract for **sliding window bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
