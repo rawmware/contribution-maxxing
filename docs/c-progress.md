@@ -369,3 +369,8 @@ This checkpoint documents the C lab contract for **producer consumer shutdown**.
 This checkpoint documents the C lab contract for **thread join ownership**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 075. mutex scope
+
+This checkpoint documents the C lab contract for **mutex scope**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
