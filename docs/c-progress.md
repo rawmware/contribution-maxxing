@@ -269,3 +269,8 @@ This checkpoint documents the C lab contract for **breadth-first visitation**. T
 This checkpoint documents the C lab contract for **depth-first visitation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 055. cycle detection
+
+This checkpoint documents the C lab contract for **cycle detection**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
