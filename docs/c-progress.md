@@ -84,3 +84,8 @@ This checkpoint documents the C lab contract for **prime boundary 1**. The examp
 This checkpoint documents the C lab contract for **prime boundary 2**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 018. fibonacci base cases
+
+This checkpoint documents the C lab contract for **fibonacci base cases**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
