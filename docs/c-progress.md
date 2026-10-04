@@ -444,3 +444,8 @@ This checkpoint documents the C lab contract for **edit distance empty string**.
 This checkpoint documents the C lab contract for **word wrapping long token**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 090. run-length encoding
+
+This checkpoint documents the C lab contract for **run-length encoding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
