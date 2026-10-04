@@ -319,3 +319,8 @@ This checkpoint documents the C lab contract for **CSV quoted field**. The examp
 This checkpoint documents the C lab contract for **line ending normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 065. token parsing
+
+This checkpoint documents the C lab contract for **token parsing**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
