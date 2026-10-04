@@ -489,3 +489,8 @@ This checkpoint documents the C lab contract for **HMAC input separation**. The 
 This checkpoint documents the C lab contract for **CRC initial value**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 099. benchmark warmup
+
+This checkpoint documents the C lab contract for **benchmark warmup**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
