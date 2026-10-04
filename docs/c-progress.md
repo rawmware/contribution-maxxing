@@ -404,3 +404,8 @@ This checkpoint documents the C lab contract for **median odd count**. The examp
 This checkpoint documents the C lab contract for **median even count**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 082. variance one sample
+
+This checkpoint documents the C lab contract for **variance one sample**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
