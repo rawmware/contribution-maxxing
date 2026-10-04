@@ -209,3 +209,8 @@ This checkpoint documents the C lab contract for **perfect square boundary**. Th
 This checkpoint documents the C lab contract for **modular exponent identity**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 043. extended gcd coefficients
+
+This checkpoint documents the C lab contract for **extended gcd coefficients**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
