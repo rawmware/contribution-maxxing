@@ -69,3 +69,8 @@ This checkpoint documents the C lab contract for **gcd termination**. The exampl
 This checkpoint documents the C lab contract for **lcm overflow guard**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 015. prime boundary 0
+
+This checkpoint documents the C lab contract for **prime boundary 0**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
