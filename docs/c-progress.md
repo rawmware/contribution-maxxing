@@ -349,3 +349,8 @@ This checkpoint documents the C lab contract for **short read handling**. The ex
 This checkpoint documents the C lab contract for **write retry policy**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 071. signal-safe state
+
+This checkpoint documents the C lab contract for **signal-safe state**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
