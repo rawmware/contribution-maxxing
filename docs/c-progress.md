@@ -184,3 +184,8 @@ This checkpoint documents the C lab contract for **merge disjoint ranges**. The 
 This checkpoint documents the C lab contract for **merge touching ranges**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 038. insertion sort stability
+
+This checkpoint documents the C lab contract for **insertion sort stability**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
