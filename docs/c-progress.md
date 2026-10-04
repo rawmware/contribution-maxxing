@@ -29,3 +29,8 @@ This checkpoint documents the C lab contract for **duplicate values**. The examp
 This checkpoint documents the C lab contract for **sorted input fast path**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 007. reverse-sorted input
+
+This checkpoint documents the C lab contract for **reverse-sorted input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
