@@ -354,3 +354,8 @@ This checkpoint documents the C lab contract for **write retry policy**. The exa
 This checkpoint documents the C lab contract for **signal-safe state**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 072. atomic counter increment
+
+This checkpoint documents the C lab contract for **atomic counter increment**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
