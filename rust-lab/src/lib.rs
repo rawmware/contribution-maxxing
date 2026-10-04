@@ -13,3 +13,4 @@ pub mod sliding_window;
 pub mod breadth_first;
 pub mod topological_sort;
 pub mod disjoint_set;
+pub mod trie;
