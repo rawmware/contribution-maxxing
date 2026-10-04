@@ -199,3 +199,8 @@ This checkpoint documents the C lab contract for **bubble sort early exit**. The
 This checkpoint documents the C lab contract for **selection of unique values**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 041. perfect square boundary
+
+This checkpoint documents the C lab contract for **perfect square boundary**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
