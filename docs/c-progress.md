@@ -124,3 +124,8 @@ This checkpoint documents the C lab contract for **min/max in one pass**. The ex
 This checkpoint documents the C lab contract for **sum overflow policy**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 026. dot product bounds
+
+This checkpoint documents the C lab contract for **dot product bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
