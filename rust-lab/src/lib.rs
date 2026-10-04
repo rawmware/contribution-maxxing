@@ -21,3 +21,4 @@ pub mod edit_distance;
 pub mod coin_change;
 pub mod custom_iterator;
 pub mod trait_dispatch;
+pub mod typed_parser;
