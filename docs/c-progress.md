@@ -484,3 +484,8 @@ This checkpoint documents the C lab contract for **URL percent encoding**. The e
 This checkpoint documents the C lab contract for **HMAC input separation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 098. CRC initial value
+
+This checkpoint documents the C lab contract for **CRC initial value**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
