@@ -64,3 +64,8 @@ This checkpoint documents the C lab contract for **modulo normalization**. The e
 This checkpoint documents the C lab contract for **gcd termination**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 014. lcm overflow guard
+
+This checkpoint documents the C lab contract for **lcm overflow guard**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
