@@ -1,0 +1,11 @@
+[package]
+name = "contribution-maxxing-rust-lab"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+publish = false
+license = "MIT"
+description = "25 dependency-free Rust algorithms, data structures and language examples"
+
+[lib]
+path = "src/lib.rs"

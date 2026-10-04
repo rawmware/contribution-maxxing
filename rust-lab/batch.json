@@ -1,0 +1,127 @@
+[
+  {
+    "module": "binary_search",
+    "title": "Search sorted slices with a generic binary search",
+    "source": "src/binary_search.rs"
+  },
+  {
+    "module": "merge_sort",
+    "title": "Implement stable generic merge sort",
+    "source": "src/merge_sort.rs"
+  },
+  {
+    "module": "two_sum",
+    "title": "Find index pairs with a hash map and checked subtraction",
+    "source": "src/two_sum.rs"
+  },
+  {
+    "module": "balanced_delimiters",
+    "title": "Validate nesting with enums and a stack",
+    "source": "src/balanced_delimiters.rs"
+  },
+  {
+    "module": "run_length",
+    "title": "Encode and decode Unicode scalar runs with output limits",
+    "source": "src/run_length.rs"
+  },
+  {
+    "module": "word_frequency",
+    "title": "Count normalized words in an ordered map",
+    "source": "src/word_frequency.rs"
+  },
+  {
+    "module": "matrix_transpose",
+    "title": "Transpose owned rectangular matrices with shape validation",
+    "source": "src/matrix_transpose.rs"
+  },
+  {
+    "module": "sieve",
+    "title": "Generate primes with the sieve of Eratosthenes",
+    "source": "src/sieve.rs"
+  },
+  {
+    "module": "checked_power",
+    "title": "Compute integer powers with checked exponentiation by squaring",
+    "source": "src/checked_power.rs"
+  },
+  {
+    "module": "prefix_sums",
+    "title": "Answer half-open range queries with checked prefix sums",
+    "source": "src/prefix_sums.rs"
+  },
+  {
+    "module": "sliding_window",
+    "title": "Compute sliding maxima with a monotonic deque",
+    "source": "src/sliding_window.rs"
+  },
+  {
+    "module": "breadth_first",
+    "title": "Find shortest unweighted graph paths with BFS",
+    "source": "src/breadth_first.rs"
+  },
+  {
+    "module": "topological_sort",
+    "title": "Order DAG vertices with cycle detection",
+    "source": "src/topological_sort.rs"
+  },
+  {
+    "module": "disjoint_set",
+    "title": "Implement union-find with compression and union by size",
+    "source": "src/disjoint_set.rs"
+  },
+  {
+    "module": "trie",
+    "title": "Store Unicode words in a trie with prefix queries",
+    "source": "src/trie.rs"
+  },
+  {
+    "module": "min_stack",
+    "title": "Track stack minima with generic owned values",
+    "source": "src/min_stack.rs"
+  },
+  {
+    "module": "ring_buffer",
+    "title": "Build a fixed-capacity FIFO that returns rejected values",
+    "source": "src/ring_buffer.rs"
+  },
+  {
+    "module": "interval_merge",
+    "title": "Merge closed intervals with explicit bound validation",
+    "source": "src/interval_merge.rs"
+  },
+  {
+    "module": "edit_distance",
+    "title": "Compute Unicode scalar edit distance with rolling rows",
+    "source": "src/edit_distance.rs"
+  },
+  {
+    "module": "coin_change",
+    "title": "Solve minimum coin change with bounded dynamic programming",
+    "source": "src/coin_change.rs"
+  },
+  {
+    "module": "custom_iterator",
+    "title": "Implement a fused iterator with overflow-safe stepping",
+    "source": "src/custom_iterator.rs"
+  },
+  {
+    "module": "trait_dispatch",
+    "title": "Demonstrate trait objects and generic static dispatch",
+    "source": "src/trait_dispatch.rs"
+  },
+  {
+    "module": "typed_parser",
+    "title": "Parse bounded integers with a custom Error implementation",
+    "source": "src/typed_parser.rs"
+  },
+  {
+    "module": "scoped_threads",
+    "title": "Sum borrowed slices with scoped threads and checked arithmetic",
+    "source": "src/scoped_threads.rs"
+  },
+  {
+    "module": "channel_workers",
+    "title": "Collect deterministic indexed results over owned channels",
+    "source": "src/channel_workers.rs"
+  }
+]
