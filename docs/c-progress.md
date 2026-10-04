@@ -334,3 +334,8 @@ This checkpoint documents the C lab contract for **error code propagation**. The
 This checkpoint documents the C lab contract for **resource cleanup**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 068. file open failure
+
+This checkpoint documents the C lab contract for **file open failure**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
