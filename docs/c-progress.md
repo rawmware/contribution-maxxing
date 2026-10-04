@@ -119,3 +119,8 @@ This checkpoint documents the C lab contract for **array minimum**. The examples
 This checkpoint documents the C lab contract for **min/max in one pass**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 025. sum overflow policy
+
+This checkpoint documents the C lab contract for **sum overflow policy**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
