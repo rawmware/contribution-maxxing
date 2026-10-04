@@ -18,3 +18,4 @@ pub mod min_stack;
 pub mod ring_buffer;
 pub mod interval_merge;
 pub mod edit_distance;
+pub mod coin_change;
