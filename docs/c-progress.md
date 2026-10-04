@@ -439,3 +439,8 @@ This checkpoint documents the C lab contract for **calendar month bounds**. The 
 This checkpoint documents the C lab contract for **edit distance empty string**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 089. word wrapping long token
+
+This checkpoint documents the C lab contract for **word wrapping long token**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
