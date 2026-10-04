@@ -149,3 +149,8 @@ This checkpoint documents the C lab contract for **palindrome punctuation**. The
 This checkpoint documents the C lab contract for **digit extraction**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 031. collatz step cap
+
+This checkpoint documents the C lab contract for **collatz step cap**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
