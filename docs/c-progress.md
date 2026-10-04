@@ -129,3 +129,8 @@ This checkpoint documents the C lab contract for **sum overflow policy**. The ex
 This checkpoint documents the C lab contract for **dot product bounds**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 027. matrix trace
+
+This checkpoint documents the C lab contract for **matrix trace**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
