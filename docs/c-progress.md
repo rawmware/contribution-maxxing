@@ -139,3 +139,8 @@ This checkpoint documents the C lab contract for **matrix trace**. The examples 
 This checkpoint documents the C lab contract for **rotation normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 029. palindrome punctuation
+
+This checkpoint documents the C lab contract for **palindrome punctuation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
