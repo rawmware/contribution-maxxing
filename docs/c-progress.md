@@ -309,3 +309,8 @@ This checkpoint documents the C lab contract for **string length empty**. The ex
 This checkpoint documents the C lab contract for **UTF-8 byte distinction**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 063. CSV quoted field
+
+This checkpoint documents the C lab contract for **CSV quoted field**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
