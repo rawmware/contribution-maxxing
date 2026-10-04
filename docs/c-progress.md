@@ -114,3 +114,8 @@ This checkpoint documents the C lab contract for **array maximum**. The examples
 This checkpoint documents the C lab contract for **array minimum**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 024. min/max in one pass
+
+This checkpoint documents the C lab contract for **min/max in one pass**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
