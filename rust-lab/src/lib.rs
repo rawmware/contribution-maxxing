@@ -19,3 +19,4 @@ pub mod ring_buffer;
 pub mod interval_merge;
 pub mod edit_distance;
 pub mod coin_change;
+pub mod custom_iterator;
