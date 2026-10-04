@@ -39,3 +39,8 @@ This checkpoint documents the C lab contract for **reverse-sorted input**. The e
 This checkpoint documents the C lab contract for **single-element input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 009. large bounded input
+
+This checkpoint documents the C lab contract for **large bounded input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
