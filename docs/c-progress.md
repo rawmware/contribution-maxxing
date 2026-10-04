@@ -264,3 +264,8 @@ This checkpoint documents the C lab contract for **graph isolated vertex**. The 
 This checkpoint documents the C lab contract for **breadth-first visitation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 054. depth-first visitation
+
+This checkpoint documents the C lab contract for **depth-first visitation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
