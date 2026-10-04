@@ -204,3 +204,8 @@ This checkpoint documents the C lab contract for **selection of unique values**.
 This checkpoint documents the C lab contract for **perfect square boundary**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 042. modular exponent identity
+
+This checkpoint documents the C lab contract for **modular exponent identity**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
