@@ -144,3 +144,8 @@ This checkpoint documents the C lab contract for **rotation normalization**. The
 This checkpoint documents the C lab contract for **palindrome punctuation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 030. digit extraction
+
+This checkpoint documents the C lab contract for **digit extraction**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
