@@ -19,3 +19,8 @@ This checkpoint documents the C lab contract for **zero and identity cases**. Th
 This checkpoint documents the C lab contract for **negative-value rejection**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 005. duplicate values
+
+This checkpoint documents the C lab contract for **duplicate values**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
