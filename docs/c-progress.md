@@ -424,3 +424,8 @@ This checkpoint documents the C lab contract for **moving average warmup**. The 
 This checkpoint documents the C lab contract for **linear regression zero slope**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 086. date leap year
+
+This checkpoint documents the C lab contract for **date leap year**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
