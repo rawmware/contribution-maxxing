@@ -16,3 +16,4 @@ pub mod disjoint_set;
 pub mod trie;
 pub mod min_stack;
 pub mod ring_buffer;
+pub mod interval_merge;
