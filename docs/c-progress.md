@@ -314,3 +314,8 @@ This checkpoint documents the C lab contract for **UTF-8 byte distinction**. The
 This checkpoint documents the C lab contract for **CSV quoted field**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 064. line ending normalization
+
+This checkpoint documents the C lab contract for **line ending normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
