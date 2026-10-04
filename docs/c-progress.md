@@ -479,3 +479,8 @@ This checkpoint documents the C lab contract for **JSON escaping**. The examples
 This checkpoint documents the C lab contract for **URL percent encoding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 097. HMAC input separation
+
+This checkpoint documents the C lab contract for **HMAC input separation**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
