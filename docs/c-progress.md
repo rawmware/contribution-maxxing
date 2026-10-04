@@ -284,3 +284,8 @@ This checkpoint documents the C lab contract for **topological ordering**. The e
 This checkpoint documents the C lab contract for **disjoint set compression**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 058. heapify invariant
+
+This checkpoint documents the C lab contract for **heapify invariant**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
