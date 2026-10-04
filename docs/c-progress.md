@@ -54,3 +54,8 @@ This checkpoint documents the C lab contract for **stable ordering**. The exampl
 This checkpoint documents the C lab contract for **integer division rules**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 012. modulo normalization
+
+This checkpoint documents the C lab contract for **modulo normalization**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
