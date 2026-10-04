@@ -1,0 +1,61 @@
+name: Polyglot live demo
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: polyglot-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Verify existing C, C#, Rust, Python and JavaScript examples
+        run: python tools/verify.py --language C --language CSharp --language Rust --language Python --language JavaScript --require-all
+      - name: Test browser C source
+        run: python web/test_c.py
+      - name: Test browser CSharp source
+        run: dotnet run --project web/tests/AlgorithmTests.csproj -- specs/vectors.json
+      - name: Generate language pages
+        run: python web/build_site.py
+      - name: Compile C to WebAssembly
+        run: |
+          git clone --depth 1 --branch 3.1.74 https://github.com/emscripten-core/emsdk.git "$RUNNER_TEMP/emsdk"
+          "$RUNNER_TEMP/emsdk/emsdk" install 3.1.74
+          "$RUNNER_TEMP/emsdk/emsdk" activate 3.1.74
+          source "$RUNNER_TEMP/emsdk/emsdk_env.sh"
+          mkdir -p .site/runtime
+          emcc web/c/algorithms.c -O2 --no-entry -sMODULARIZE=1 -sEXPORT_ES6=1 -sENVIRONMENT=web -sEXPORTED_FUNCTIONS='["_lab_gcd","_lab_factorial","_lab_prime","_lab_fibonacci"]' -o .site/runtime/c.mjs
+      - name: Compile CSharp browser application
+        run: |
+          dotnet publish web/csharp/PolyglotLive.csproj -c Release -o "$RUNNER_TEMP/csharp-publish"
+          mkdir -p .site/csharp-live
+          cp -a "$RUNNER_TEMP/csharp-publish/wwwroot/." .site/csharp-live/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,38 @@
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@namespace PolyglotLive
+
+<a href="../languages/csharp.html">← C# source workspace</a>
+<p class="eyebrow">C# · .NET WEBASSEMBLY</p>
+<h1>C#<span> / live runtime</span></h1>
+<p>These algorithms execute as C# under the browser's .NET WebAssembly runtime. No server or JavaScript algorithm substitutes.</p>
+<label>Algorithm
+    <select @bind="task">
+        <option value="gcd">GCD</option>
+        <option value="factorial">Factorial</option>
+        <option value="prime">Prime (1 / 0)</option>
+        <option value="fibonacci">Fibonacci</option>
+    </select>
+</label>
+<label>Input A / n <input type="number" min="0" max="1000000" step="1" @bind="a" /></label>
+<label>Input B (GCD only) <input type="number" min="0" max="1000000" step="1" @bind="b" /></label>
+<button @onclick="Run">Run C#</button>
+<output aria-live="polite">@result</output>
+<p>Bounds: GCD / prime 0–1,000,000; factorial 0–12; Fibonacci 0–30.</p>
+<a href="https://github.com/rawmware/contribution-maxxing/blob/main/web/csharp/Algorithms.cs">Inspect C# runtime source ↗</a>
+
+@code {
+    private string task = "gcd";
+    private int a = 48;
+    private int b = 18;
+    private string result = "C# WebAssembly ready.";
+    private void Run()
+    {
+        try
+        {
+            int value = Algorithms.Solve(task, a, b);
+            result = $"{task} → {value} · executed in C#";
+        }
+        catch (ArgumentException error) { result = error.Message; }
+    }
+}

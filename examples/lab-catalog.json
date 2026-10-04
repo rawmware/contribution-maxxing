@@ -1,0 +1,177 @@
+[
+  {
+    "name": "array_max",
+    "description": "Find the largest value in an integer array.",
+    "expected": "7",
+    "c": "examples/c/lab/array_max.c",
+    "cpp": "examples/cpp/lab/array_max.cpp"
+  },
+  {
+    "name": "binary_search",
+    "description": "Return the index of a value in a sorted array, or -1.",
+    "expected": "2",
+    "c": "examples/c/lab/binary_search.c",
+    "cpp": "examples/cpp/lab/binary_search.cpp"
+  },
+  {
+    "name": "bit_count",
+    "description": "Count set bits using a portable shift loop.",
+    "expected": "5",
+    "c": "examples/c/lab/bit_count.c",
+    "cpp": "examples/cpp/lab/bit_count.cpp"
+  },
+  {
+    "name": "bubble_sort",
+    "description": "Sort a short array in place with bubble sort.",
+    "expected": "1 2 4 5 8",
+    "c": "examples/c/lab/bubble_sort.c",
+    "cpp": "examples/cpp/lab/bubble_sort.cpp"
+  },
+  {
+    "name": "clamp",
+    "description": "Constrain a number to an inclusive interval.",
+    "expected": "10 -3 4",
+    "c": "examples/c/lab/clamp.c",
+    "cpp": "examples/cpp/lab/clamp.cpp"
+  },
+  {
+    "name": "collatz_steps",
+    "description": "Count Collatz transitions to reach one.",
+    "expected": "111",
+    "c": "examples/c/lab/collatz_steps.c",
+    "cpp": "examples/cpp/lab/collatz_steps.cpp"
+  },
+  {
+    "name": "digit_sum",
+    "description": "Sum decimal digits of a nonnegative integer.",
+    "expected": "27",
+    "c": "examples/c/lab/digit_sum.c",
+    "cpp": "examples/cpp/lab/digit_sum.cpp"
+  },
+  {
+    "name": "extended_gcd",
+    "description": "Compute Bezout coefficients with iterative extended Euclid.",
+    "expected": "6 2 -3",
+    "c": "examples/c/lab/extended_gcd.c",
+    "cpp": "examples/cpp/lab/extended_gcd.cpp"
+  },
+  {
+    "name": "insertion_sort",
+    "description": "Sort values with insertion sort.",
+    "expected": "-1 3 3 7 9",
+    "c": "examples/c/lab/insertion_sort.c",
+    "cpp": "examples/cpp/lab/insertion_sort.cpp"
+  },
+  {
+    "name": "is_palindrome",
+    "description": "Check whether a lowercase ASCII word is a palindrome.",
+    "expected": "1 0",
+    "c": "examples/c/lab/is_palindrome.c",
+    "cpp": "examples/cpp/lab/is_palindrome.cpp"
+  },
+  {
+    "name": "lcm",
+    "description": "Find the least common multiple using GCD reduction.",
+    "expected": "42",
+    "c": "examples/c/lab/lcm.c",
+    "cpp": "examples/cpp/lab/lcm.cpp"
+  },
+  {
+    "name": "linear_search",
+    "description": "Find the first matching value in an unsorted array.",
+    "expected": "3",
+    "c": "examples/c/lab/linear_search.c",
+    "cpp": "examples/cpp/lab/linear_search.cpp"
+  },
+  {
+    "name": "max_subarray",
+    "description": "Find the maximum contiguous subarray sum (Kadane's algorithm).",
+    "expected": "6",
+    "c": "examples/c/lab/max_subarray.c",
+    "cpp": "examples/cpp/lab/max_subarray.cpp"
+  },
+  {
+    "name": "matrix_trace",
+    "description": "Sum the main diagonal of a square matrix.",
+    "expected": "15",
+    "c": "examples/c/lab/matrix_trace.c",
+    "cpp": "examples/cpp/lab/matrix_trace.cpp"
+  },
+  {
+    "name": "merge_sorted",
+    "description": "Merge two sorted arrays into ascending order.",
+    "expected": "0 1 2 3 7 8",
+    "c": "examples/c/lab/merge_sorted.c",
+    "cpp": "examples/cpp/lab/merge_sorted.cpp"
+  },
+  {
+    "name": "min_max",
+    "description": "Find the minimum and maximum in one pass.",
+    "expected": "-5 12",
+    "c": "examples/c/lab/min_max.c",
+    "cpp": "examples/cpp/lab/min_max.cpp"
+  },
+  {
+    "name": "modular_power",
+    "description": "Compute modular exponentiation by repeated squaring.",
+    "expected": "445",
+    "c": "examples/c/lab/modular_power.c",
+    "cpp": "examples/cpp/lab/modular_power.cpp"
+  },
+  {
+    "name": "perfect_square",
+    "description": "Test an integer for being a perfect square without floating point.",
+    "expected": "1 0",
+    "c": "examples/c/lab/perfect_square.c",
+    "cpp": "examples/cpp/lab/perfect_square.cpp"
+  },
+  {
+    "name": "prime_count",
+    "description": "Count primes up to thirty with the Sieve of Eratosthenes.",
+    "expected": "10",
+    "c": "examples/c/lab/prime_count.c",
+    "cpp": "examples/cpp/lab/prime_count.cpp"
+  },
+  {
+    "name": "reverse_digits",
+    "description": "Reverse the decimal digits of a nonnegative integer.",
+    "expected": "654321",
+    "c": "examples/c/lab/reverse_digits.c",
+    "cpp": "examples/cpp/lab/reverse_digits.cpp"
+  },
+  {
+    "name": "rotate_left",
+    "description": "Rotate an array left by two positions.",
+    "expected": "3 4 5 1 2",
+    "c": "examples/c/lab/rotate_left.c",
+    "cpp": "examples/cpp/lab/rotate_left.cpp"
+  },
+  {
+    "name": "string_length",
+    "description": "Measure a null-terminated string without library length helpers.",
+    "expected": "polyglot 8",
+    "c": "examples/c/lab/string_length.c",
+    "cpp": "examples/cpp/lab/string_length.cpp"
+  },
+  {
+    "name": "sum_array",
+    "description": "Accumulate integer values in a single pass.",
+    "expected": "15",
+    "c": "examples/c/lab/sum_array.c",
+    "cpp": "examples/cpp/lab/sum_array.cpp"
+  },
+  {
+    "name": "unique_count",
+    "description": "Count distinct values in a small integer array.",
+    "expected": "4",
+    "c": "examples/c/lab/unique_count.c",
+    "cpp": "examples/cpp/lab/unique_count.cpp"
+  },
+  {
+    "name": "vector_dot",
+    "description": "Compute the dot product of two integer vectors.",
+    "expected": "32",
+    "c": "examples/c/lab/vector_dot.c",
+    "cpp": "examples/cpp/lab/vector_dot.cpp"
+  }
+]
