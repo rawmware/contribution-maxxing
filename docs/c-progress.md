@@ -49,3 +49,8 @@ This checkpoint documents the C lab contract for **large bounded input**. The ex
 This checkpoint documents the C lab contract for **stable ordering**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 011. integer division rules
+
+This checkpoint documents the C lab contract for **integer division rules**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
