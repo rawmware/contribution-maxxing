@@ -214,3 +214,8 @@ This checkpoint documents the C lab contract for **modular exponent identity**. 
 This checkpoint documents the C lab contract for **extended gcd coefficients**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 044. prefix sum invariant
+
+This checkpoint documents the C lab contract for **prefix sum invariant**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
