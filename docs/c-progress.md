@@ -409,3 +409,8 @@ This checkpoint documents the C lab contract for **median even count**. The exam
 This checkpoint documents the C lab contract for **variance one sample**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 083. histogram empty input
+
+This checkpoint documents the C lab contract for **histogram empty input**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
