@@ -449,3 +449,8 @@ This checkpoint documents the C lab contract for **word wrapping long token**. T
 This checkpoint documents the C lab contract for **run-length encoding**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 091. checksum determinism
+
+This checkpoint documents the C lab contract for **checksum determinism**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
