@@ -274,3 +274,8 @@ This checkpoint documents the C lab contract for **depth-first visitation**. The
 This checkpoint documents the C lab contract for **cycle detection**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
 
 
+## 056. topological ordering
+
+This checkpoint documents the C lab contract for **topological ordering**. The examples remain standalone, deterministic, and compilable with C11; the note records the edge case that future changes must preserve.
+
+
